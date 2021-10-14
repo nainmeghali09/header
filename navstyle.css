@@ -81,8 +81,20 @@ input[type="checkbox"]{
         align-items:center;
         height: 100vh;
         width:100%;
-        background-color: black;
+        background-color:black;
         transition: cubic-bezier(0.075, 0.82, 0.165, 1);
         }
-        
+        #click:checked ~ .nav-links{
+            left:0;
+        }
+        .nav-links li{
+            width:100%;
+            color: #fefefe ;
+            margin-left:-100%;
+            display:block;
+            font-size:20px;
+        }
+        #click:checked ~ .nav-links li a{
+            margin-left: -48%;
+        }
 }
